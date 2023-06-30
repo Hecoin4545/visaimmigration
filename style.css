@@ -1,0 +1,285 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lora', serif;
+}
+
+nav {
+    background-color: #f7f7f7;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.navbar-upper {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.navbar-phone {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.navbar-phone p {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+
+}
+
+.navbar-lower {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 0px 20px;
+}
+
+.navbar-logo img {
+    max-height: 50px;
+}
+
+.navbar-links {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-links ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin: 0 20px;
+}
+
+.navbar-links a {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+
+
+.navbar-slogan {
+    text-align: center;
+    flex: 1;
+}
+
+
+/* slider css starts here  */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    flex: 1;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slider img {
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    left: 0px;
+    width: 100vw;
+}
+
+.slider-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.prev, .next {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+/* image section starts here  */
+.image-section {
+    padding: 81px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-grid {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.image-item {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h4 {
+    font-size: 20px;
+    position: relative;
+    top: 15px;
+}
+
+
+/* testimonials  */
+.testimonials-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.slider-container {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.slide {
+    width: 300px;
+    margin-right: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+
+
+
+/* about section */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.video-container {
+    width: 50%;
+    margin-right: 50px;
+}
+
+.video-container video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.text-container {
+    width: 50%;
+    text-align: left;
+}
+
+.text-container button {
+    position: relative;
+    top: 10px;
+    width: 100px;
+    height: 40px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.text-container h2 {
+    margin-bottom: 20px;
+    font-size: 45px;
+    font-family: 'Lato', sans-serif;
+}
+
+.text-container p {
+    line-height: 1.5;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+}
+
+
+/* footer start here  */
+footer {
+    background-color: #fdd2d2;
+    color: black;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-left {
+    position: relative;
+    left: 74px;
+    width: 50%;
+}
+
+.footer-right {
+    position: relative;
+    right: 74px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left h3, .footer-right h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.footer-left p,
+.footer-right p {
+    margin-bottom: 10px;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+}
+
+.footer-left p {
+    width: 80%;
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Visas Immigration Services || Visas For Canada , Australia etc
+    </title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar Starts Here  -->
+    <nav>
+      <div class="navbar-upper">
+        <div class="navbar-phone">
+          <p>+918750843333 || +918750583333 || +918587974066</p>
+        </div>
+      </div>
+      <div class="navbar-lower">
+        <div class="navbar-logo">
+          <img
+            src="https://visasimmigrationservices.com/applynowforcanadavisa/photos/visa.jpeg"
+          />
+        </div>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#">Form</a></li>
+            <li><a href="#">FAQ'S</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-slogan">
+          <h1>Get FREE Consultation for CANADA IMMIGRATION</h1>
+        </div>
+      </div>
+    </nav>
+
+    <!-- slider starts here  -->
+
+    <div class="slider">
+      <div class="slide active">
+        <img src="photo1.jpg" alt="Image 1" />
+      </div>
+      <div class="slide">
+        <img src="photo2.jpg" alt="Image 2" />
+      </div>
+      <div class="slide">
+        <img src="photo3.jpg" alt="Image 3" />
+      </div>
+      <div class="slider-controls">
+        <button class="prev" onclick="prevSlide()">Prev</button>
+        <button class="next" onclick="nextSlide()">Next</button>
+      </div>
+    </div>
+
+    <!-- image section starts here  -->
+    <section class="image-section">
+      <div class="image-grid">
+        <div class="image-item">
+          <img
+            src="https://www.nationwidevisas.com/images/icons/cicc-registered.png"
+            alt="cicc-registered"
+          />
+          <h4>CICC Registered</h4>
+        </div>
+
+        <div class="image-item">
+          <img
+            src="https://www.nationwidevisas.com/images/icons/Hand-holding-icon.webp"
+            alt="Hand-holding-icon"
+          />
+          <h4>Hand Holding Support</h4>
+        </div>
+        <div class="image-item">
+          <img
+            src="https://www.nationwidevisas.com/images/icons/Trust-transparent-icon.webp"
+            alt="Trust-transparent-icon"
+          />
+          <h4>True & Transparent</h4>
+        </div>
+        <div class="image-item">
+          <img
+            src="https://www.nationwidevisas.com/images/icons/Process-time-icon.webp"
+            alt="Process-time-icon"
+          />
+          <h4>Process Time 8-10 Months</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- image section ends here  -->
+    <!-- about section  -->
+    <section class="about-section">
+      <div class="video-container">
+        <video src="video.mp4" controls></video>
+      </div>
+      <div class="text-container">
+        <h2>About Us</h2>
+        <p>
+          Visa Immigration Services is one of India's best immigration
+          consulting companies. Established in May 2016 in Canada from a small
+          office with a team of the best immigration consultants, our company
+          has registered exponential growth and success in the past few
+          years...Visas Immigration Services offers end-to-end solutions for
+          immigrants looking to immigrate to Canada. Whether you want to study,
+          work, invest, or apply for Canada PR - WE CAN HELP YOU! Discover your
+          Canada Immigration options with ICCRC-authorized immigration
+          consultants.Fill in your details via this form, we will get back to
+          you.
+        </p>
+        <button>Apply Now</button>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>About Us</h3>
+          <p>
+            Visa is a global payments technology company that enables secure,
+            reliable, and convenient electronic transactions for individuals,
+            businesses, and governments in more than 200 countries and
+            territories
+          </p>
+        </div>
+        <div class="footer-right">
+          <h3>Contact Us</h3>
+          <p>Email: info@company.com</p>
+          <p>Phone: 555-1234</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    let slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+    let slideInterval = setInterval(nextSlide, 5000);
+
+    function nextSlide() {
+      slides[currentSlide].className = 'slide';
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].className = 'slide active';
+    }
+
+    function prevSlide() {
+      slides[currentSlide].className = 'slide';
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      slides[currentSlide].className = 'slide active';
+    }
+  </script>
+</html>
